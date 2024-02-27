@@ -73,7 +73,7 @@ Description : API Usage.
             courseList.innerHTML = ''; 
             courses.forEach(course => {
                 let li = document.createElement('li');
-                li.textContent = `${course.name} - ${course.unit}`;
+                li.textContent = `${course.name} (Units: ${course.unit})`;
                 courseList.appendChild(li);
         });
     } catch (error) {
